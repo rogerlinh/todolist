@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasklist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="task-container">
+         <h3 class="list-task">TO DO LIST</h3>
+         <div class="search-wrapper">
+            <input type="text" class="search-task" placeholder="Search your tasks...">
+            <button class="search-task-btn" type="submit">Search</button>
+            <div class="search-result"></div>
+          </div>
+         <div class="list-task-detail">
+             <ul class="task"></ul>
+         </div>
+         <div class="create-task">
+             <h3>Create Task</h3>
+             <div class="form-task">
+             <input type="text" placeholder="Enter Task" class="add-to-task" required>
+             <button class="add-task">Add Task</button>
+            </div>
+         </div>
+    </div>
+    <div class="confirm-del-task" style="display: none">
+        <div class="dell-task">
+        <h3 class="confirm-text">Bạn muốn xóa task?</h3>
+        <div class="confirm-btn">
+            <button class="yes-btn">Đúng, xóa task!</button>
+            <button class="no-btn">Không!</button>
+        </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
